@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 1000px; */
+  margin-top: 20vh;
+}
+.wrapper {
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  flex-direction: row-reverse;
+  height: auto;
+  /* margin-top: 20px; */
+  justify-content: center;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  /* width: 80% !important; */
+}
+.image {
+  background-image: url("../images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+}
+.overlay {
+  position: absolute;
+  background-color: hsla(277, 64%, 61%, 0.5);
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+}
+.content {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 500px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5em;
+}
+p.des {
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+  font-size: 13px;
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+  }
+  .wrapper {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .image {
+    background-image: url("../images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .overlay {
+    position: absolute;
+    background-color: hsla(277, 64%, 61%, 0.5);
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  .content {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 300px;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .s1 {
+    margin: 15px;
+  }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+  }
+  p.des {
+    margin: 20px;
+  }
+}
