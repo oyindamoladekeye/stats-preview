@@ -27,7 +27,7 @@ body {
   /* width: 80% !important; */
 }
 .image {
-  background-image: url("../images/image-header-desktop.jpg");
+  background-image: url("./images/image-header-desktop.jpg");
   background-repeat: no-repeat;
   position: relative;
   width: 500px;
@@ -95,7 +95,7 @@ span {
     text-align: center;
   }
   .image {
-    background-image: url("../images/image-header-mobile.jpg");
+    background-image: url("./images/image-header-mobile.jpg");
     background-repeat: no-repeat;
     position: relative;
     width: 300px;
@@ -159,7 +159,7 @@ span {
     text-align: center;
   }
   .image {
-    background-image: url("../images/image-header-mobile.jpg");
+    background-image: url("./images/image-header-mobile.jpg");
     background-repeat: no-repeat;
     position: relative;
     width: 300px;
